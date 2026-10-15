@@ -3,60 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="JL1976 – Projekte rund um Software, Hardware, 3D-Druck, Fahrzeugtechnik, Games, Smart Home und Modellbau.">
-  <title>JL1976 · 135erHeli</title>
+  <meta name="description" content="JL1976 – Projekte aus Software, Hardware, Fahrzeugtechnik, Modellbau, 3D-Druck und Games.">
+  <title>JL1976 / 135erHeli.de</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#top" aria-label="Startseite"><span class="brand-mark">135</span><span>JL1976</span></a>
-  <nav><a href="#projekte">Projekte</a><a href="#profil">Über mich</a><a href="#prinzipien">Prinzipien</a></nav>
+  <div class="header-inner">
+    <a class="brand" href="#top"><b>JL1976</b><span>/ 135erHeli.de</span></a>
+    <nav><a href="#projekte">Projekte</a><a href="#profil">Profil</a><a href="https://github.com/jygnw29kms-bit" rel="noopener">GitHub ↗</a></nav>
+  </div>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">135erHeli.de · Berlin</p>
-      <h1>Ich bin <span>JL1976.</span><br>Ich baue Dinge, die funktionieren sollen.</h1>
-      <p class="lead">Software, Elektronik, 3D-Druck, Fahrzeugtechnik, Gameserver, Smart Home und RC-Modellbau. Diese Seite bündelt meine öffentlichen und privaten Projekte – ohne interne Zugangsdaten, Quellcode aus privaten Repositories oder vertrauliche Infrastruktur offenzulegen.</p>
-      <div class="hero-actions"><a class="button primary" href="#projekte">Projekte ansehen</a><a class="button" href="https://github.com/jygnw29kms-bit" rel="noopener">GitHub</a></div>
+  <section class="intro">
+    <div class="intro-title">
+      <p class="label">BERLIN · SEIT 1976</p>
+      <h1>JL1976</h1>
+      <p class="subtitle">Software · Hardware · Fahrzeuge · RC · 3D-Druck · Games</p>
     </div>
-    <aside class="hero-panel" aria-label="Schwerpunkte">
-      <div><strong>BUILD</strong><span>Software · Hardware · CAD</span></div>
-      <div><strong>TEST</strong><span>Realbetrieb statt Demo</span></div>
-      <div><strong>ITERATE</strong><span>Versionieren · verbessern · dokumentieren</span></div>
-    </aside>
-  </section>
-
-  <section id="profil" class="section split">
-    <div><p class="section-kicker">Über mich</p><h2>Technik ist für mich kein Schaukasten.</h2></div>
-    <div class="copy"><p>Mich interessieren Projekte, bei denen Software und reale Technik zusammenkommen: ein Raspberry Pi im Grow-Setup, ein CAN-Gateway im Touran, eine Asterisk-Telefonanlage im Betrieb, ein druckbares RC-Flugmodell oder eine UE5-Map mit echten Geodaten.</p><p>Ich arbeite projektorientiert, halte Zwischenstände in Git fest und bevorzuge Lösungen, die auf echter Hardware geprüft werden können. Öffentliche Projekte verlinke ich direkt; private Projekte sind hier bewusst nur inhaltlich beschrieben.</p></div>
-  </section>
-
-  <section id="projekte" class="section">
-    <div class="section-head"><div><p class="section-kicker">Projektübersicht</p><h2>Aktiv, gebaut, getestet.</h2></div><p>Öffentliche und private Arbeiten in einer gemeinsamen Übersicht.</p></div>
-    <div class="project-grid">
-      <article class="project featured"><div class="meta"><span>OPEN SOURCE</span><span>Raspberry Pi · IoT</span></div><h3>Grow-Central</h3><p>Lokale Grow-Plattform mit Raspberry Pi, Sensorik, Geräteintegration, Räumen, Kalibrierung, Apple Home / HomeKit-Anbindung und eigener Cloud-Struktur.</p><div class="tags"><span>Python</span><span>ESP32</span><span>MQTT</span><span>HomeKit</span></div><a href="https://grow-central.de" rel="noopener">grow-central.de ↗</a></article>
-      <article class="project"><div class="meta"><span>PUBLIC</span><span>3D Printing</span></div><h3>Printbench Studio</h3><p>Native Desktop-Lösung rund um OrcaSlicer, Druckerabfrage, Geräteverwaltung, Profile und einen integrierten Collector – als eigenständiger 135er-Workflow ohne Bambu Studio.</p><div class="tags"><span>Desktop</span><span>OrcaSlicer</span><span>P2S</span></div><a href="https://github.com/jygnw29kms-bit/Printbench-Studio" rel="noopener">Repository ↗</a></article>
-      <article class="project"><div class="meta"><span>PUBLIC</span><span>RC · CAD</span></div><h3>F-14 Tomcat RC</h3><p>FDM-druckbares RC-Modell mit ca. 900 mm Spannweite, Klappflügeln, 4S-Antrieb und RC-optimierter Innenstruktur bei möglichst originalgetreuer Außenform.</p><div class="tags"><span>Fusion</span><span>FDM</span><span>RC</span></div><a href="https://github.com/jygnw29kms-bit/F14-RC-Model" rel="noopener">Repository ↗</a></article>
-      <article class="project"><div class="meta"><span>PUBLIC</span><span>Game Development</span></div><h3>135er Spandau Strike</h3><p>UE5-Shooterprojekt mit realen Berliner Geodaten, Spandau-Schauplätzen, Rathaus-Fokus, eigenen Playermodels und einer Unreal-only Pipeline.</p><div class="tags"><span>Unreal Engine 5</span><span>Berlin 3D</span><span>GIS</span></div><a href="https://github.com/jygnw29kms-bit/135er-Spandau-Defeat" rel="noopener">Repository ↗</a></article>
-      <article class="project"><div class="meta"><span>PUBLIC</span><span>Automotive</span></div><h3>135er Touran</h3><p>CAN-Gateway und Live-Dashboard für einen VW Touran 1T3. Basis ist ein Waveshare ESP32-S3-CAN-2CH-U mit direktem CAN-Zugriff, Logging und Diagnose.</p><div class="tags"><span>ESP32-S3</span><span>CAN</span><span>Android</span></div><a href="https://github.com/jygnw29kms-bit/135er-Touran" rel="noopener">Repository ↗</a></article>
-      <article class="project"><div class="meta"><span>PUBLIC</span><span>RC Helicopter</span></div><h3>135er Universal Helicopter Controller</h3><p>Universeller Controller rund um RC-Helikopter – entwickelt als eigenes 135er-Hardware-/Softwareprojekt und Namensgeber der Domain.</p><div class="tags"><span>Controller</span><span>RC</span><span>Hardware</span></div><a href="https://github.com/jygnw29kms-bit/135er-Universal-Helicopter-Controller" rel="noopener">Repository ↗</a></article>
-      <article class="project private"><div class="meta"><span>PRIVAT</span><span>Workshop Software</span></div><h3>Etes Werkstattplaner / WerkstattControl</h3><p>Werkstatt- und Personalplanung für eine KFZ-Werkstatt mit Bühnenplanung, Urlaubs- und Rechteverwaltung sowie Ausbaupfad zum ERP mit Angebot, Auftrag, Rechnung, Kasse und Reifenhotel.</p><div class="tags"><span>ERP</span><span>Planung</span><span>Windows</span></div><span class="private-note">Privates Repository</span></article>
-      <article class="project private"><div class="meta"><span>PRIVAT</span><span>Telephony</span></div><h3>EtesPBX</h3><p>Asterisk-basierte Telefonanlage mit zentraler Nebenstellenlogik, Rufgruppen, Weiterleitungen, IVR sowie Einbindung von WLAN/SIP-Endgeräten und FRITZ!Box-DECT.</p><div class="tags"><span>Asterisk</span><span>SIP</span><span>VoIP</span></div><span class="private-note">Privates Repository</span></article>
-      <article class="project"><div class="meta"><span>PRIVATE BUILD</span><span>Game Server</span></div><h3>Hauptstadtgut8ten</h3><p>Eigene Gameserver-Plattform auf Debian/HestiaCP mit PufferPanel im Backend, kundenseitigem Frontend, Live-Status, Playerstats und CS2-Modding.</p><div class="tags"><span>Debian</span><span>CS2</span><span>Server</span></div><span class="private-note">Interne Infrastruktur</span></article>
-      <article class="project"><div class="meta"><span>IN DEVELOPMENT</span><span>Messaging</span></div><h3>P2P Messenger</h3><p>Kindgerechter Messenger für iOS und Android mit lokaler Chat-Speicherung, Unique-ID, Chat, Anrufen und Videotelefonie – ohne klassischen zentralen Nachrichtenserver.</p><div class="tags"><span>iOS</span><span>Android</span><span>P2P</span></div><span class="private-note">Privates Projekt</span></article>
-      <article class="project"><div class="meta"><span>CLIENT</span><span>Web</span></div><h3>Kemper Lackreparaturen</h3><p>Relaunch für Lackreparatur Kemper in Falkensee mit Fokus auf Spot-Repair, eigenständigem Layout, Kontaktstrecke und mobil optimierter Präsentation.</p><div class="tags"><span>Webdesign</span><span>Responsive</span><span>DSGVO</span></div><a href="https://lackreparatur-kemper.de" rel="noopener">Website ↗</a></article>
+    <div class="intro-copy">
+      <p>Ich baue eigene Systeme, Werkzeuge und Prototypen – meistens dort, wo Software auf reale Hardware trifft.</p>
+      <p>Diese Seite ist kein Produktkatalog. Sie ist eine laufende Übersicht meiner öffentlichen und privaten Projekte.</p>
     </div>
   </section>
 
-  <section id="prinzipien" class="section principles">
-    <div><p class="section-kicker">Arbeitsweise</p><h2>Vier Dinge, die sich durchziehen.</h2></div>
-    <div class="principle-grid"><div><strong>01</strong><h3>Realbetrieb</h3><p>Hardware wird am echten Gerät getestet, nicht nur simuliert.</p></div><div><strong>02</strong><h3>Versionierung</h3><p>Git, reproduzierbare Stände und klare Checkpoints.</p></div><div><strong>03</strong><h3>Eigenständigkeit</h3><p>Möglichst wenig unnötige Abhängigkeiten von Fremdsoftware.</p></div><div><strong>04</strong><h3>Privatsphäre</h3><p>Private Repositories, Zugangsdaten und interne Netze bleiben privat.</p></div></div>
+  <section id="projekte" class="section projects-section">
+    <div class="section-title-row">
+      <h2>Projekte</h2>
+      <span>öffentlich + privat</span>
+    </div>
+
+    <div class="project-list">
+      <article class="project-row">
+        <div class="project-no">01</div>
+        <div class="project-main"><h3>Grow-Central</h3><p>Lokale Grow-Plattform mit Raspberry Pi, ESP32-Sensorik, Geräteverwaltung, Räumen, Kalibrierung und Apple-Home-Anbindung.</p></div>
+        <div class="project-meta"><span>OPEN SOURCE</span><span>Raspberry Pi / ESP32 / IoT</span><a href="https://grow-central.de" rel="noopener">grow-central.de ↗</a></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">02</div>
+        <div class="project-main"><h3>Printbench Studio</h3><p>Eigener Desktop-Workflow rund um OrcaSlicer, Druckerabfrage, Geräteverwaltung, Druckprofile und integrierten Collector.</p></div>
+        <div class="project-meta"><span>PUBLIC</span><span>Desktop / 3D-Druck</span><a href="https://github.com/jygnw29kms-bit/Printbench-Studio" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">03</div>
+        <div class="project-main"><h3>F-14 Tomcat RC</h3><p>FDM-druckbares RC-Modell mit Klappflügeln, 4S-Antrieb und eigener CAD-Konstruktion für möglichst originalgetreue Außenform.</p></div>
+        <div class="project-meta"><span>PUBLIC</span><span>Fusion / FDM / RC</span><a href="https://github.com/jygnw29kms-bit/F14-RC-Model" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">04</div>
+        <div class="project-main"><h3>135er Spandau Strike</h3><p>UE5-Shooterprojekt mit realen Berliner Geodaten, Spandauer Schauplätzen, eigenen Playermodels und Unreal-only Pipeline.</p></div>
+        <div class="project-meta"><span>PUBLIC</span><span>UE5 / GIS / Berlin 3D</span><a href="https://github.com/jygnw29kms-bit/135er-Spandau-Defeat" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">05</div>
+        <div class="project-main"><h3>135er Touran</h3><p>CAN-Gateway und Live-Dashboard für einen VW Touran 1T3 auf Basis des ESP32-S3-CAN-2CH-U mit Logging und Diagnose.</p></div>
+        <div class="project-meta"><span>PUBLIC</span><span>Automotive / CAN / ESP32</span><a href="https://github.com/jygnw29kms-bit/135er-Touran" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">06</div>
+        <div class="project-main"><h3>135er Universal Helicopter Controller</h3><p>Eigenes Hardware-/Softwareprojekt rund um einen universellen Controller für RC-Helikopter und Ursprung des 135erHeli-Namens.</p></div>
+        <div class="project-meta"><span>PUBLIC</span><span>RC / Controller / Hardware</span><a href="https://github.com/jygnw29kms-bit/135er-Universal-Helicopter-Controller" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="project-row private-row">
+        <div class="project-no">07</div>
+        <div class="project-main"><h3>Etes Werkstattplaner / WerkstattControl</h3><p>Werkstatt-, Personal- und ERP-System für eine reale KFZ-Werkstatt: Bühnenplanung, Rechte, Urlaub, Arbeitszeiten, Aufträge, Rechnungen, Kasse und Reifenhotel.</p></div>
+        <div class="project-meta"><span>PRIVAT</span><span>ERP / Werkstatt</span><em>internes Repository</em></div>
+      </article>
+
+      <article class="project-row private-row">
+        <div class="project-no">08</div>
+        <div class="project-main"><h3>EtesPBX</h3><p>Asterisk-Telefonanlage mit zentraler Nebenstellenlogik, Rufgruppen, IVR, WLAN/SIP-Endgeräten und FRITZ!Box-DECT-Einbindung.</p></div>
+        <div class="project-meta"><span>PRIVAT</span><span>Asterisk / SIP / VoIP</span><em>internes Repository</em></div>
+      </article>
+
+      <article class="project-row private-row">
+        <div class="project-no">09</div>
+        <div class="project-main"><h3>Hauptstadtgut8ten</h3><p>Eigene Gameserver-Plattform auf Debian/HestiaCP mit PufferPanel-Backend, eigenem Kunden-Frontend, Live-Status und CS2-Modding.</p></div>
+        <div class="project-meta"><span>PRIVAT</span><span>Debian / CS2 / Server</span><em>interne Infrastruktur</em></div>
+      </article>
+
+      <article class="project-row private-row">
+        <div class="project-no">10</div>
+        <div class="project-main"><h3>P2P Messenger</h3><p>Kindgerechter Messenger für iOS und Android mit lokaler Chat-Speicherung, Unique-ID, Chat, Anrufen und Videotelefonie.</p></div>
+        <div class="project-meta"><span>PRIVAT</span><span>iOS / Android / P2P</span><em>in Entwicklung</em></div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-no">11</div>
+        <div class="project-main"><h3>Kemper Lackreparaturen</h3><p>Relaunch für Lackreparatur Kemper in Falkensee mit Spot-Repair-Fokus, eigenem Layout und mobil optimierter Präsentation.</p></div>
+        <div class="project-meta"><span>CLIENT</span><span>Web</span><a href="https://lackreparatur-kemper.de" rel="noopener">Website ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="profil" class="section profile-section">
+    <div class="section-title-row"><h2>Profil</h2><span>JL1976</span></div>
+    <div class="profile-grid">
+      <div><p class="label">SCHWERPUNKTE</p><p>Softwareentwicklung, eingebettete Systeme, Fahrzeugtechnik, CAD, 3D-Druck, Server, Unreal Engine und praktische Automatisierung.</p></div>
+      <div><p class="label">ARBEITSWEISE</p><p>Direkt am echten System testen, sauber versionieren, Zwischenstände sichern und technische Abhängigkeiten möglichst klein halten.</p></div>
+      <div><p class="label">PRIVAT</p><p>Private Projekte werden hier beschrieben, aber interne Netze, Zugangsdaten, Secrets und private Quelltexte bleiben außerhalb der öffentlichen Website.</p></div>
+    </div>
   </section>
 </main>
 
-<footer><div><strong>JL1976 · 135erHeli.de</strong><span>Persönliche Projektübersicht</span></div><div><a href="https://github.com/jygnw29kms-bit" rel="noopener">GitHub</a><span>© <span id="year"></span> JL1976</span></div></footer>
+<footer>
+  <div>JL1976 / 135erHeli.de</div>
+  <div>© <span id="year"></span> JL1976</div>
+</footer>
 <script src="app.js"></script>
 </body>
 </html>
