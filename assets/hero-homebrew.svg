@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">JL1976 Homebrew Lab Hero Graphic</title>
+<desc id="desc">Technical homebrew illustration with PCB traces, oscilloscope waveform, helicopter rotor, aircraft silhouette and workshop labels.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071116"/><stop offset="1" stop-color="#0b1d22"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65f4ff"/><stop offset="1" stop-color="#00b9db"/></linearGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#15353e" stroke-width="1"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="960" height="560" rx="18" fill="url(#bg)"/>
+<rect x="1" y="1" width="958" height="558" rx="17" fill="none" stroke="#26515d"/>
+<rect x="18" y="18" width="924" height="524" rx="10" fill="url(#grid)" opacity=".75"/>
+<g fill="#061014" stroke="#2f6571" stroke-width="2"><circle cx="34" cy="34" r="8"/><circle cx="926" cy="34" r="8"/><circle cx="34" cy="526" r="8"/><circle cx="926" cy="526" r="8"/></g>
+<g stroke="#1de0ff" fill="none" stroke-width="2" opacity=".8">
+  <path d="M68 92h92v48h62v54h90"/><path d="M68 120h56v104h72v70h116"/><path d="M892 84h-92v72h-76v66h-116"/><path d="M892 124h-54v128h-84v64h-96"/>
+</g>
+<g fill="#65f4ff"><circle cx="68" cy="92" r="4"/><circle cx="312" cy="194" r="4"/><circle cx="68" cy="120" r="4"/><circle cx="312" cy="294" r="4"/><circle cx="892" cy="84" r="4"/><circle cx="608" cy="222" r="4"/><circle cx="892" cy="124" r="4"/><circle cx="658" cy="316" r="4"/></g>
+<g transform="translate(225 112)">
+  <rect x="0" y="0" width="510" height="270" rx="9" fill="#071419" stroke="#2f6571" stroke-width="2"/>
+  <rect x="18" y="18" width="474" height="234" rx="5" fill="#031014" stroke="#163e48"/>
+  <path d="M28 136h54l14-42 22 88 24-122 24 100 18-42 24 18h42l15-38 16 76 24-116 24 102 22-48 20 24h45l18-56 18 94 22-66 16 26h48" fill="none" stroke="url(#cyan)" stroke-width="4" filter="url(#glow)"/>
+  <text x="28" y="44" font-family="Consolas,monospace" font-size="13" fill="#6e9ca6">OSC-01 / BENCH SIGNAL</text>
+  <text x="28" y="226" font-family="Consolas,monospace" font-size="12" fill="#4d7680">BUILD  TEST  BREAK  FIX  REPEAT</text>
+</g>
+<g transform="translate(72 356)" stroke="#8bdce9" fill="none">
+  <line x1="0" y1="62" x2="176" y2="62" stroke-width="4"/><circle cx="88" cy="62" r="9" stroke-width="3"/><line x1="88" y1="62" x2="88" y2="100" stroke-width="5"/><path d="M62 102h52l20 18H45z" stroke-width="3"/><line x1="20" y1="62" x2="0" y2="78"/><line x1="156" y1="62" x2="176" y2="78"/>
+  <text x="0" y="142" font-family="Consolas,monospace" font-size="12" fill="#4e7d86" stroke="none">RC / ROTOR / CONTROL</text>
+</g>
+<g transform="translate(708 394)">
+  <path d="M0 44l48-10 22-28 10 1-10 30 78 10 18 12-96-2-16 31-8-1 2-31-48-12z" fill="#10262c" stroke="#65f4ff" stroke-width="2"/>
+  <text x="0" y="112" font-family="Consolas,monospace" font-size="12" fill="#4e7d86">CAD / FDM / RC</text>
+</g>
+<g font-family="Consolas,monospace" font-size="12" fill="#6e9ca6">
+  <text x="66" y="56">JL1976 // HOME LAB</text><text x="66" y="332">PCB / CAN / ESP32 / PI</text><text x="694" y="356">UNREAL / SERVER / AUTOMATION</text>
+</g>
+<g transform="translate(748 56)"><rect width="144" height="34" rx="3" fill="#0a171b" stroke="#2c5964"/><circle cx="18" cy="17" r="5" fill="#8fff8f"/><text x="32" y="21" font-family="Consolas,monospace" font-size="11" fill="#bfe9ef">LAB ONLINE</text></g>
+</svg>
