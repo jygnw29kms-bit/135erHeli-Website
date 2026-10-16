@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" role="img" aria-labelledby="t d">
+<title id="t">135er Heli.de</title><desc id="d">135erHeli.de Wordmark in white and red</desc>
+<defs><filter id="rough"><feTurbulence baseFrequency=".035" numOctaves="3" seed="13" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter></defs>
+<g transform="skewX(-7)" filter="url(#rough)">
+<text x="22" y="122" font-family="Impact,Arial Narrow,sans-serif" font-size="154" font-weight="900" fill="#f2f2f2" letter-spacing="-8">135ER</text>
+<text x="170" y="224" font-family="Impact,Arial Narrow,sans-serif" font-size="126" font-weight="900" fill="#ed0b18" letter-spacing="-7">HELI.DE</text>
+</g>
+<path d="M35 22 52 2 67 22 88 10 82 41H21L14 10Z" fill="none" stroke="#f2f2f2" stroke-width="8" stroke-linejoin="round"/>
+<path d="M36 243c110-22 240-19 400-4" fill="none" stroke="#ed0b18" stroke-width="5" opacity=".8"/>
+</svg>

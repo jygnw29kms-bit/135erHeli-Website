@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2027"/><stop offset=".55" stop-color="#101318"/><stop offset="1" stop-color="#050607"/></linearGradient>
+  <radialGradient id="redglow" cx="70%" cy="58%" r="38%"><stop offset="0" stop-color="#7b0b13" stop-opacity=".45"/><stop offset="1" stop-color="#7b0b13" stop-opacity="0"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="2" seed="17" result="n"/><feColorMatrix in="n" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .15 0"/></filter>
+  <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1920" height="900" fill="url(#sky)"/><rect width="1920" height="900" fill="url(#redglow)"/>
+<g fill="#0a0c0f" opacity=".95">
+  <path d="M0 628h82v-90h70v90h56v-148h66v148h70v-68h98v68h55v-190h88v190h72v-110h72v110h102v-72h75v72h63v-236h52v236h74v-96h70v96h75v-66h94v66h68v-142h84v142h91v272H0Z"/>
+  <rect x="1225" y="268" width="20" height="360"/><path d="m1235 160-16 108h32z"/><circle cx="1235" cy="327" r="28"/>
+</g>
+<g opacity=".38" fill="#f5f5f5"><circle cx="1235" cy="170" r="3"/><circle cx="136" cy="555" r="2"/><circle cx="420" cy="500" r="2"/><circle cx="1580" cy="534" r="2"/></g>
+<!-- Stylized RC helicopter -->
+<ellipse cx="1350" cy="742" rx="410" ry="46" fill="#000" opacity=".7" filter="url(#shadow)"/>
+<g transform="translate(920 245)">
+  <path d="M120 328c78-116 228-177 426-162 163 13 299 74 357 154 22 30 13 69-19 84-92 44-355 51-573 16-110-18-184-54-191-92Z" fill="#0b0e12" stroke="#353b42" stroke-width="6"/>
+  <path d="M174 314c75-87 200-126 354-112 123 11 216 47 269 100-117-23-308-28-623 12Z" fill="#161b21"/>
+  <path d="M361 217c60-45 139-61 225-42l-42 143-207-5Z" fill="#11151a" stroke="#3b4148" stroke-width="4"/>
+  <path d="M243 315c149-56 397-76 593-18-72 22-167 39-294 45-106 5-208 1-299-27Z" fill="#a00912" opacity=".55"/>
+  <path d="M156 356c112 38 277 56 473 45 102-6 197-20 271-42-49 51-173 83-333 89-194 8-355-27-411-92Z" fill="#07090b"/>
+  <path d="M826 274 974 227l17 20-129 82Z" fill="#0a0c0f" stroke="#333941" stroke-width="4"/>
+  <path d="M877 299 1034 323l-8 18-169 4Z" fill="#0b0d10"/>
+  <path d="M451 145h61v67h-61z" fill="#0a0c0f"/><path d="M482 151V61" stroke="#5c636c" stroke-width="8"/>
+  <path d="M-235 57H1130" stroke="#20252a" stroke-width="10"/><path d="M-285 57H1160" stroke="#0d1013" stroke-width="4"/>
+  <circle cx="482" cy="61" r="18" fill="#11151a" stroke="#4a5159" stroke-width="5"/>
+  <path d="M250 455h455" stroke="#333940" stroke-width="8"/><path d="M300 455l-46 74M670 455l45 74M229 529h510" stroke="#515861" stroke-width="8" stroke-linecap="round"/>
+  <path d="M333 274 481 217l84 17-40 103-210 5Z" fill="#11161b" stroke="#40464d" stroke-width="5"/>
+  <path d="M507 232c62 9 113 32 151 62l-82 31-50 12Z" fill="#1a2026" opacity=".85"/>
+  <g fill="#ed0b18"><path d="m647 292 87-29-35 50-78 21Z"/><path d="m245 326 83-32-34 51-81 19Z"/></g>
+  <g stroke="#e30613" stroke-width="5" fill="none" opacity=".8"><path d="M567 379h89M686 362h67M760 344h45"/></g>
+  <text x="535" y="393" font-family="Impact,Arial Narrow,sans-serif" font-size="58" fill="#f2f2f2" transform="rotate(-4 535 393)">JL1976</text>
+</g>
+<!-- gritty foreground -->
+<path d="M0 760c220-22 390 8 615 0 319-11 521-57 829-43 190 8 315 24 476 12v171H0Z" fill="#08090b"/>
+<g stroke="#22272d" stroke-width="6" opacity=".9"><path d="M0 800h1920"/><path d="M130 780 30 900M370 780 290 900M720 770 650 900M1080 752 1030 900M1450 745 1390 900M1760 760 1690 900"/></g>
+<g fill="#777" opacity=".18" font-family="Impact,Arial Narrow,sans-serif" font-size="58"><text x="1010" y="835" transform="rotate(-7 1010 835)">BERLIN</text><text x="1440" y="850" transform="rotate(5 1440 850)">135ER</text><text x="285" y="858" transform="rotate(-4 285 858)">SPANDAU</text></g>
+<rect width="1920" height="900" filter="url(#grain)" opacity=".28"/>
+</svg>

@@ -3,76 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="135erHeli.de / JL1976 – Projekte, Technik, RC, 3D-Druck, Software und Berlin. Raw city hardware culture.">
-  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="135erHeli.de / JL1976 – RC-Helipilot, Homebrew-Technik, 3D-Druck, Embedded, Software und Berliner Projekte.">
+  <meta name="theme-color" content="#050607">
   <title>135erHeli.de / JL1976</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="#top"><img src="assets/jl-logo.svg" alt="JL1976"><span>135ERHELI.DE</span></a>
-  <nav><a href="#projects">PROJEKTE</a><a href="#tech">TECHNIK</a><a href="#about">ÜBER JL1976</a><a href="https://github.com/jygnw29kms-bit" rel="noopener">GITHUB ↗</a></nav>
-  <a class="crew-pill" href="#projects">135ER CREW</a>
+<header class="site-header">
+  <a class="brand" href="#top"><img src="assets/135er-wordmark.svg" alt="135erHeli.de"></a>
+  <nav class="main-nav"><a class="active" href="#top">HOME</a><a href="#projects">PROJEKTE</a><a href="#tech">TECHNIK</a><a href="#printbench">PRINTBENCH</a><a href="https://grow-central.de" rel="noopener">GROW-CENTRAL</a><a href="#spandau">SPANDAU</a><a href="#about">JL1976</a><a href="#contact">KONTAKT</a></nav>
+  <a class="search" href="#projects" aria-label="Projekte suchen">⌕</a>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="hero-noise"></div>
-    <div class="hero-copy">
-      <div class="kicker">JL1976 // BERLIN // RAW CITY HARDWARE</div>
-      <h1><span>135ER</span><strong>HELI.DE</strong></h1>
-      <p class="hero-sub">PROJEKTE. TECHNIK. VISION.<br><b>RAW. CITY. BUILD.</b></p>
-      <p class="hero-text">Software, RC, 3D-Druck, Embedded, Fahrzeuge, Games und alles dazwischen. Keine Stock-Show. Echte Projekte, echte Hardware, echte Baustellen.</p>
-      <div class="hero-actions"><a class="cta primary" href="#projects">JETZT ENTDECKEN →</a><a class="cta ghost" href="#about">ÜBER JL1976</a></div>
-      <div class="hero-stats"><span><small>PROJECTS</small><b>11+</b></span><span><small>BASE</small><b>BERLIN</b></span><span><small>MODE</small><b>HOMEBREW</b></span></div>
+<main id="top" class="page-shell">
+  <section class="hero-master">
+    <img class="hero-scene" src="assets/hero-master.svg" alt="135er RC-Heli über Berliner Stadtkulisse">
+    <div class="hero-left">
+      <div class="raw-title">RAW<br>CITY<br>HARDWARE</div>
+      <div class="raw-list">BUILDS<br>PRINTS<br>EMBEDDED<br>SOFTWARE<br>AND MORE</div>
+      <a class="red-btn" href="#projects">PROJEKTE ENTDECKEN →</a>
     </div>
-    <div class="hero-art" aria-label="135er Heli Hero Grafik">
-      <div class="hero-scan"></div>
-      <img src="assets/hero-homebrew.svg" alt="135er Heli Homebrew Technik Grafik">
-      <div class="hero-stamp">135ER / JL1976 / 2026</div>
-    </div>
-    <div class="hero-side">RAW<br>CITY<br>TECH<br>BUILD</div>
+    <img class="hero-wordmark" src="assets/135er-wordmark.svg" alt="135erHeli.de JL1976">
+    <div class="hero-hand">IDEEN<br>BUILDS<br>TECHNIK<br>COMMUNITY<br>SPANDAU<br>JL1976</div>
+    <div class="hero-arrow">→</div>
   </section>
 
-  <section class="rail" aria-label="Themen"><span>HELICOPTER / AVIATION</span><span>3D / RENDERING</span><span>GAMING / SIMULATION</span><span>HARDWARE / SETUP</span><span>PHOTO / VIDEO</span><span>URBAN / BERLIN</span></section>
-
-  <section id="projects" class="section dark-section">
-    <div class="section-head"><div><p>01 / PROJECT INDEX</p><h2>AKTUELLE PROJEKTE</h2></div><span>PUBLIC + PRIVATE BUILDS</span></div>
-    <div class="feature-grid">
-      <article class="feature-card feature-red"><span class="tag">FLAGSHIP</span><h3>Grow-Central</h3><p>Raspberry Pi, ESP32, Sensorik, HomeKit, Cloud-Link und lokale Steuerung.</p><a href="https://grow-central.de" rel="noopener">ÖFFNEN →</a></article>
-      <article class="feature-card"><span class="tag">DESKTOP</span><h3>Printbench Studio</h3><p>Orca-basierter 3D-Druck-Workflow, Geräte, Collector, Profile und Live-Daten.</p><a href="https://github.com/jygnw29kms-bit/Printbench-Studio" rel="noopener">GITHUB →</a></article>
-      <article class="feature-card"><span class="tag">UE5</span><h3>135er Spandau Strike</h3><p>Berlin, Rathaus Spandau, reale Geodaten, UE5/Lyra und eigene 2030-Playermodels.</p><a href="https://github.com/jygnw29kms-bit/135er-Spandau-Defeat" rel="noopener">GITHUB →</a></article>
-      <article class="feature-card"><span class="tag">RC / CAD</span><h3>F-14 Tomcat RC</h3><p>FDM-druckbares RC-Modell mit Klappflügeln, 4S-Antrieb und eigener Konstruktion.</p><a href="https://github.com/jygnw29kms-bit/F14-RC-Model" rel="noopener">GITHUB →</a></article>
-    </div>
-
-    <div class="project-list">
-      <article><b>05</b><div><h3>135er Touran</h3><p>ESP32-S3 CAN-Gateway und Live-Dashboard für den VW Touran 1T3.</p></div><span>AUTO / CAN</span></article>
-      <article><b>06</b><div><h3>135er Universal Helicopter Controller</h3><p>Controller-Hardware, RC-Heli, MCU und der Ursprung von 135erHeli.</p></div><span>RC / HARDWARE</span></article>
-      <article><b>07</b><div><h3>Dyson BMS</h3><p>Diagnose, BMS-Kommunikation, Raspberry Pi und Desktop-Tools.</p></div><span>EMBEDDED</span></article>
-      <article><b>08</b><div><h3>Etes WerkstattControl</h3><p>Werkstattplanung, Personal, ERP und reale Betriebsabläufe.</p></div><span>PRIVATE</span></article>
-      <article><b>09</b><div><h3>EtesPBX</h3><p>Asterisk, SIP, Rufgruppen, IVR und eigene Telefonie-Infrastruktur.</p></div><span>PRIVATE</span></article>
-      <article><b>10</b><div><h3>Hauptstadtgut8ten</h3><p>Gameserver-Plattform, CS2, eigenes Frontend und Live-Status.</p></div><span>SERVER</span></article>
-      <article><b>11</b><div><h3>Kemper Lackreparaturen</h3><p>Web-Relaunch, Spot-Repair, GIMP-Master und mobil optimierte Präsentation.</p></div><span>CLIENT</span></article>
+  <section id="projects" class="projects-section">
+    <div class="section-heading"><h2>AKTUELLE <span>PROJEKTE</span></h2></div>
+    <div class="projects-grid">
+      <article class="project-card"><div class="project-visual heli-visual"><img src="assets/hero-master.svg" alt="RC Heli"></div><div class="project-caption"><div><h3>135ER RC HELI</h3><p>FLIGHT · SETUP · CONTROLLER</p></div><b>→</b></div></article>
+      <article id="printbench" class="project-card"><div class="project-visual"><img src="assets/card-printbench.svg" alt="Printbench"></div><div class="project-caption"><div><h3>PRINTBENCH</h3><p>3D-PRINT · CAD · P2S · MODS</p></div><b>→</b></div></article>
+      <article class="project-card"><div class="project-visual"><img src="assets/card-embedded.svg" alt="Embedded Hardware"></div><div class="project-caption"><div><h3>EMBEDDED & SOFTWARE</h3><p>ESP32 · PI · CAN · TOOLS</p></div><b>→</b></div></article>
+      <article class="project-card"><div class="project-visual"><img src="assets/card-grow.svg" alt="Grow Central"></div><div class="project-caption"><div><h3>GROW-CENTRAL</h3><p>TECHNIK · AUTOMATION · SENSORIK</p></div><b>→</b></div></article>
     </div>
   </section>
 
-  <section id="tech" class="section tech-section">
-    <div class="section-head"><div><p>02 / EQUIPMENT & SETUP</p><h2>TECHNIK, DIE ARBEITET</h2></div><span>NO SHOWROOM GEAR</span></div>
-    <div class="tech-grid">
-      <div><span>01</span><h3>EMBEDDED</h3><p>ESP32, Raspberry Pi, Sensorik, CAN, BMS, GPIO.</p></div>
-      <div><span>02</span><h3>FABRICATION</h3><p>FDM, Bambu Lab P2S, FreeCAD, Fusion-Legacy, Blender.</p></div>
-      <div><span>03</span><h3>SOFTWARE</h3><p>Python, Web, iOS, Android, Debian, Automatisierung.</p></div>
-      <div><span>04</span><h3>SIMULATION</h3><p>UE5, Lyra, GIS, 3D-Stadtmodelle, Game-Tooling.</p></div>
-    </div>
+  <section class="info-grid">
+    <article id="about" class="info-panel about-panel">
+      <div class="about-bg"></div>
+      <div class="info-copy"><h2>JL1976</h2><p>RC-Helipilot aus Berlin. Technik, Ideen und Projekte aus echter Werkstattpraxis.</p><p>Von RC-Heli, Controller-Hardware und 3D-Druck bis Embedded, Fahrzeuge, Server, UE5 und Grow-Technik.</p><a href="#tech">MEHR ÜBER JL1976 →</a></div>
+    </article>
+    <article id="tech" class="info-panel tech-panel">
+      <h2>TECHNIK & <span>KNOW-HOW</span></h2>
+      <div class="tech-row"><div><i>⬡</i><span>CAD & 3D-PRINT</span></div><div><i>▦</i><span>EMBEDDED</span></div><div><i>&lt;/&gt;</i><span>SOFTWARE</span></div><div><i>⌁</i><span>RC HELI</span></div><div><i>⌘</i><span>GROW-TECH</span></div><div><i>⚒</i><span>WERKSTATT</span></div></div>
+    </article>
+    <article class="info-panel workshop-panel"><img src="assets/card-workshop.svg" alt="Werkstatt"><div class="workshop-copy"><h2>WERKSTATT</h2><p>Bauen, testen, zerlegen, verbessern.</p><a href="#projects">ZUR WERKSTATT →</a></div></article>
   </section>
 
-  <section id="about" class="section about-section">
-    <div class="about-mark">JL1976</div>
-    <div class="about-copy"><p>03 / STORY & CREW</p><h2>BAUEN. TESTEN. KAPUTTMACHEN. BESSER MACHEN.</h2><p>135erHeli.de ist die öffentliche Werkbank rund um JL1976. Kein Agentur-Portfolio und keine erfundene Case-Study. Hier landen Projekte, die wirklich auf Rechnern, Pis, Fahrzeugen, Druckern und Werkbänken laufen.</p></div>
+  <section id="spandau" class="deep-projects">
+    <article><span>UE5 / BERLIN</span><h3>135ER SPANDAU STRIKE</h3><p>Rathaus Spandau, reale Geodaten, eigene Playermodels und Unreal-only Pipeline.</p></article>
+    <article><span>RC / CAD</span><h3>F-14 TOMCAT RC</h3><p>FDM-druckbares RC-Modell mit Klappflügeln und 4S-Antrieb.</p></article>
+    <article><span>AUTO / CAN</span><h3>135ER TOURAN</h3><p>ESP32-S3-CAN-Gateway und Live-Dashboard für den Touran 1T3.</p></article>
+  </section>
+
+  <section class="gallery-section">
+    <h2>IMPRESSIONEN</h2>
+    <div class="gallery-row"><div class="thumb heli-thumb"></div><div class="thumb print-thumb"></div><div class="thumb embed-thumb"></div><div class="thumb grow-thumb"></div><div class="thumb work-thumb"></div><div class="thumb heli-thumb"></div><div class="thumb print-thumb"></div><div class="thumb city-thumb"></div><div class="same-ideas">SAME<br>IDEAS<br><span>HIGHER</span></div></div>
   </section>
 </main>
 
-<footer><span>JL SOFTWARE SOLUTIONS 1976 / 135ERHELI.DE</span><span>© <span id="year"></span> JL1976</span></footer>
+<footer id="contact"><span>JL SOFTWARE SOLUTIONS 1976 / 135ERHELI.DE</span><span>© <span id="year"></span> JL1976</span></footer>
 <script src="app.js"></script>
 </body>
 </html>
