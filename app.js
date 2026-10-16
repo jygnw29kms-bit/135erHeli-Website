@@ -1,1 +1,1 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+﻿// Visual master: no runtime JavaScript required.
